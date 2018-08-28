@@ -1,0 +1,32 @@
+sudo apt-get install moquitto mosquitto-client
+  169  sdf
+  170  ps -Af
+  171  ifconfig 
+  172  nano /etc/mosquitto/mosquitto.conf 
+  173  mosquitto_sub -h localhost -t /test/status
+  174  sudo add-apt-repository ppa:certbot/certbot
+  175  sudo apt-get update
+  176  sudo apt-get install certbot
+  177  sudo ufw allow http
+  178  sudo certbot certonly --standalonw --standalone-supported-challenges http-01 -d mqtt.example.com
+  179  sudo certbot certonly --standalone --standalone-supported-challenges http-01 -d mqtt.example.com
+  180  sudo crontab -e
+  181  sudo mosquitto_passwd -c /etc/mosquitto/passwd sammy
+  182  sudo mosquitto_passwd -c /etc/mosquitto/passwd
+  183   mosquitto_sub -h localhost -t /test/status
+  184   mosquitto_sub -h localhost -t /test/status
+  185   mosquitto_sub -h localhost -t /test/status
+  186   mosquitto_sub -h localhost -t /test/status
+  187   mosquitto_sub -h localhost -t /test/status
+  188  sudo vi /etc/mosquitto/mosquitto.conf 
+  189  sudo apt-add-repository ppa:mosquitto-dev/mosquitto-ppa
+  190  sudo apt-get update
+  191  sudo apt-get install mosquitto mosquitto-clients
+  192  mosquitto_sub -h localhost -t test
+  193  mosquitto_sub -h localhost -t test
+  194  mosquitto_pub -h localhost -t test -m "hi"
+  195  mosquitto_sub -h localhost -t /test/confirm
+  196  mosquitto_pub -h localhost -t /test/light1 -m "1"
+  197  mosquitto_pub -h localhost -t /test/light1 -m "1"
+  198  mosquitto_pub -h localhost -t /test/light1 -m "0"
+  199  python

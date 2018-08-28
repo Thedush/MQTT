@@ -1,0 +1,24 @@
+
+
+server pub -local sub
+
+
+SERVER
+mosquitto_pub -h localhost -t test -m "hi"
+
+
+LOCAL
+
+python working/sub.py
+
+
+local pub server sub
+
+
+LOCAL
+python working/pub.py
+
+SERVER
+
+mosquitto_sub -h localhost -t /test/status
+
