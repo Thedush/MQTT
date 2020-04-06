@@ -10,7 +10,7 @@ def on_connect(client, userdata, flags, rc):
 def main():
 	paho.mqtt.publish.single(
 		topic='test',
-		payload='hi',
+		payload='navaneeth',
 		qos=2,
 		hostname='45.35.48.219'
 		#port=8883,
